@@ -1,0 +1,36 @@
+.tree {
+  user-select: none;
+}
+.tree ul,
+.tree li {
+  padding: 0;
+  list-style: none;
+}
+
+.tree li {
+  padding-left: 16px;
+}
+
+.branch {
+  display: none;
+}
+
+.branch.root,
+.node-expanded > .branch {
+  display: block;
+}
+
+.node-expandable {
+  background: 0 2px no-repeat url('./assets/icon_plus.png');
+}
+
+.node-expanded {
+  background-image: url('./assets/icon_minus.png');
+}
+
+.node-text {
+  cursor: pointer;
+  background: 0 0 no-repeat none;
+  color: lightblue;
+  padding-left: 20px;
+}
